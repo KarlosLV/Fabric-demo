@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "pl_sharepoint_maxtest"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6a8e0dd0-90e2-9e99-4347-dbc9efb1f197"
+  }
+}
