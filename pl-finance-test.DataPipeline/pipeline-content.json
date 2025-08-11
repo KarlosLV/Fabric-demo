@@ -1,0 +1,60 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "CommonDataServiceForAppsSource",
+            "datasetSettings": {
+              "type": "CommonDataServiceForAppsEntity",
+              "typeProperties": {
+                "entityName": "mserp_generaljournalaccountentrybientity"
+              },
+              "schema": [],
+              "externalReferences": {
+                "connection": "aacbad0e-6b14-40e3-86dc-2afb11c89f7c"
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "Append",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "finance-generaljournal"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "lh_mtg_bronze_crispdev",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "da832b80-8699-93fd-4f41-150cadc85796",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Copy data1",
+        "dependsOn": []
+      }
+    ]
+  }
+}
