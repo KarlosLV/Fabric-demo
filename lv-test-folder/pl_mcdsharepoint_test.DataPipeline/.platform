@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "pl_mcdsharepoint_test"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b3a5e907-500f-a6c9-4f82-e3369826a7f3"
+  }
+}
